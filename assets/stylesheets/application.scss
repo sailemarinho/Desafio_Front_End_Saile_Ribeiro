@@ -1,10 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
 body {
-  font-family: Helvetica;
+  font-family: 'Nunito', sans-serif;
 }
 
-#root {
-  height: 100vh;
+#root > div {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100vh;
 }
+
+a {
+    text-decoration: none;
+
+  }
+
+.btn_sign {
+    margin: 10px;
+}
+
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.header {
+  background: rgba(12,29,41,0.9);
+  padding: 20px 64px;
+  height: 81px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+
+  .header_container {
+    display: flex;
+    justify-content: space-between;
+
+    .header_text-hollow {
+      opacity: 0.7;
+      font-size: 16px;
+      line-height: 1.1;
+      color: #ffffff;
+      transition: opacity 0.3s;
+      font-weight: bold;
+    }
+
+    .header_logo {
+      flex-grow: 0;
+      margin-right: 30px;
+
+      img {
+        width: 125px;
+        border-style: none;
+      }
+    }
+
+    .header_nav-list {
+      flex-grow: 5;
+      display: flex;
+      justify-content: flex-start;
+      white-space: nowrap;
+
+      .header_nav-list__item {
+        display: inline-block;
+        margin: 0px 31px;
+
+        a {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+        }
+      }
+
+      .header_active {
+        margin: 0px 12px;
+
+        a {
+          border-bottom: 2px #ffffff solid;
+          padding: 0 19px 23px;
+        }
+      }
+    }
+
+    .header_user_info {
+      display: flex;
+      align-items: center;
+      margin-left: 40px;
+
+      .header_sign_join {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0px 30px;
+      }
+
+      .header_sign_up_button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        width: 74px;
+        height: 30px;
+        background-color: #e62e2e;
+        box-shadow: 0 2px 8px 0 rgba(255,0,0,0.5);
+
+      }
+    }
+  }
+}
+
+
+.hero {
+    width: 100%;
+    background: url(https://www.sanarflix.com.br/checkout/img/banner-home.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+  .hero_overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    min-height: 599px;
+    padding: 0px;
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  // .form-search {
+  //   padding: 60px 60px 60px 120px;
+  //   border: none;
+  //   font-size: 2.6em;
+  //   box-shadow: none;
+  //   &:focus {
+  //     box-shadow: none;
+  //   }
+  // }
+
+  // &:before {
+  //   content: '\F002';
+  //   position: absolute;
+  //   top: 35px;
+  //   left: 60px;
+  //   font-family: FontAwesome;
+  //   font-size: 2.6em;
+  //   opacity: 0.4;
+  // }
+
+  // .selected-gif {
+  //   text-align: center;
+  //   display: flex;
+  //   flex-grow: 1;
+  //   height: calc(100vh - 232px);
+  //   background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.22'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+  //   .gif {
+  //     max-width: 80%;
+  //     max-height: 80%;
+  //     margin: auto;
+  //   }
+  // }
+}
+
+// .right-scene {
+//   // flex: 0 0 40%;
+//   // background-color: #ecf0f1;
+//   // overflow: scroll;
+
+//   // .gif-list {
+//   //   column-count: 2;
+//   //   column-gap: 5px;
+//   //   padding: 5px;
+
+//   //   .gif {
+//   //     width: 100%;
+//   //     margin: 5px;
+//   //     cursor: pointer;
+//   //   }
+//   // }
+// }
