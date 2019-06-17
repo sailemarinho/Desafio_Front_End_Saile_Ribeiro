@@ -10,7 +10,9 @@ class App extends Component {
       <div>
         <Header />
         <Hero />
+        <div className="container"></div>
       </div>
+
     );
   }
 }
